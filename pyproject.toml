@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "acedrg"
+version = "315"
+description = "Your package description"
+authors = [{ name = "Your Name", email = "you@example.com" }]
+readme = "README.md"
+requires-python = ">=3.6"
+dependencies = [
+    "rdkit",
+    "servalcat",
+    "aceDRG-tables @ git+https://github.com/flong-mrc/aceDRG-tables.git"
+]
+
+[tool.setuptools]
+packages = ["acedrg"]  # Ensure the package is included
+include-package-data = true  # Ensures data files are included
+
+[project.scripts]
+acedrg = "acedrg.acedrg:main"  # Creates a CLI command
