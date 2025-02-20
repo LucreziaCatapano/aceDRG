@@ -1,3 +1,0 @@
-rdkit
-servalcat
-git+https://github.com/flong-mrc/aceDRG-tables.git
