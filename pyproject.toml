@@ -5,8 +5,8 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "acedrg"
 version = "315"
-description = "Your package description"
-authors = [{ name = "Your Name", email = "you@example.com" }]
+description = "Stereochemical description generator for ligands"
+authors = [{ name = "Fei Long", email = "" }]
 readme = "README.md"
 requires-python = ">=3.6"
 dependencies = [
@@ -16,8 +16,8 @@ dependencies = [
 ]
 
 [tool.setuptools]
-packages = ["acedrg"]  # Ensure the package is included
-include-package-data = true  # Ensures data files are included
+packages = ["acedrg"]
+include-package-data = true
 
 [project.scripts]
-acedrg = "acedrg.acedrg:main"  # Creates a CLI command
+acedrg = "acedrg.acedrg:main"
